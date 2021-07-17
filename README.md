@@ -11,8 +11,6 @@ humidity data from sensor and send to the api
 
 # :clipboard: ESP8266 Model
 
-In order to understand the entities, I've created the following database model:
-
 ![nodemcu model](.github/nodemcu_model.jpg)
 
 # :construction_worker: Installation
@@ -32,4 +30,4 @@ cp src/config.example.h src/config.h
 
 # :runner: Getting Started
 
-Before you execute the project is important that you have your iotcheck-api running in your machine
+Before you execute the project is important that you have your iotcheck-api running in your machine or any internet domain.
