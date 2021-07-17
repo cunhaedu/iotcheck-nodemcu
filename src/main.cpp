@@ -52,13 +52,13 @@ void httpRequest() {
 String makeRequest() {
   http.begin(client, String(BASE_URL) + "temperatures");
   http.addHeader("content-type", "application/x-www-form-urlencoded");
-  
+
   float currentTemperature = getCurrentTemperature();
   float currentHumidity = getCurrentHumidity();
 
   String body = "temperature=" + String(currentTemperature) + 
     "&humidity=" + String(currentHumidity) + 
-    "&sensor_id=1&device_token=" + DEVICE_TOKEN;
+    "&sensor=" + SENSOR_ID + "&token=" + DEVICE_TOKEN;
 
   int httpCode = http.POST(body);
 
